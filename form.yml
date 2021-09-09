@@ -1,5 +1,5 @@
 ---
-title: Remote Desktop Ubuntu
+title: Remote Desktop Ros-Gazebo
 cluster: "academic"
 attributes:
   desktop: "myxfce"

@@ -1,5 +1,5 @@
 ---
-name: Remote Desktop
+name: Remote Desktop Ros-Gazebo
 category: Interactive Apps
 subcategory: Desktops
 role: batch_connect
