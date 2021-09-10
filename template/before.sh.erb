@@ -333,6 +333,20 @@ export DESKTOP_FOLDER=$XDG_DESKTOP_DIR
 mkdir -p $DESKTOP_FOLDER
 <%- end -%>
 
+## create icon for Matlab
+export matlab_icon=<%= session.staged_root.join("assets", "matlab.png") %>
+export matlab_script=<%= session.staged_root.join("scripts", "my_matlab.sh") %>
+cat > $DESKTOP_FOLDER/Matlab.desktop <<EOF
+[Desktop Entry]
+Version=1.0
+Type=Application
+Exec=$matlab_script
+Icon=$matlab_icon
+Terminal=false
+Name=Matlab
+Comment=Startup Matlab
+EOF
+chmod +x $DESKTOP_FOLDER/Matlab.desktop
 
 ## create icon for vscode
 export vscode_icon=<%= session.staged_root.join("assets", "vscode.png") %>
