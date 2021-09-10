@@ -57,7 +57,7 @@ attributes:
     value: 0
     help: |
           **_Checking this box will create a desktop folder unique to this job_**
-  centos_version: es159rosgazebo_melodic-devel-xfce4-2021-09-09-1798b1b1af44.sif
+  centos_version: es159rosgazebo_melodic-devel-xfce4-2021-09-10-4c0dbc561907.sif
   use_intel: False
   use_abaqus: False
   use_matlab: False

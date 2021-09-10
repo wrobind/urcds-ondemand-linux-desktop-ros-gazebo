@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+zenity --info --text  '<span foreground="red" font="18"><b><i>Matlab</i></b> is starting up.\nPlease allow a minute to load.\nThank you for your patience</span>' --width=500 --height=200 &
+
 export MATLAB_HOME=/n/helmod/apps/centos7/Core/matlab/R2021a-fasrc01
 export PATH=/n/helmod/apps/centos7/Core/matlab/R2021a-fasrc01/bin:$PATH
 export MLM_LICENSE_FILE=27000@rclic2
