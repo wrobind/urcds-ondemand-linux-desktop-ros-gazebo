@@ -1,6 +1,10 @@
 # Export the module function if it exists
 [[ $(type -t module) == "function" ]] && export -f module
 
+
+rosport=$(find_port localhost 11000 13000 )
+export ROS_MASTER_URI=http://localhost:$rosport
+
 export SING_OVERLAYS=""
 #
 #
