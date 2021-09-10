@@ -2,8 +2,8 @@
 [[ $(type -t module) == "function" ]] && export -f module
 
 
-rosport=$(find_port localhost 11000 13000 )
-export ROS_MASTER_URI=http://localhost:$rosport
+ROSPORT=$(find_port localhost 11000 13000 )
+export ROS_MASTER_URI=http://localhost:$ROSPORT
 
 export SING_OVERLAYS=""
 #
