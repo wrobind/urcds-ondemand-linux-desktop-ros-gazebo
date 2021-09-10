@@ -81,3 +81,7 @@ COPY ./code_1.60.0-1630494279_amd64.deb /tmp
 RUN apt -y update && \
     DEBIAN_FRONTEND=noninteractive apt -y install  /tmp/code_1.60.0-1630494279_amd64.deb && \
     rm -rf /var/lib/apt/lists/*  /tmp/code_1.60.0-1630494279_amd64.deb
+
+RUN apt -y update && \
+    DEBIAN_FRONTEND=noninteractive apt -y install zenity && \
+    rm -rf /var/lib/apt/lists/*
