@@ -4,6 +4,8 @@
 
 export ROSPORT=$(find_port localhost 11000 13000 )
 export ROS_MASTER_URI=http://localhost:$ROSPORT
+export GAZEBOPORT=$(find_port localhost 11000 13000 )
+export GAZEBO_MASTER_URI=http://localhost:$GAZEBOPORT
 
 export SING_OVERLAYS=""
 #
