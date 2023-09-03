@@ -35,5 +35,5 @@ export SINGULARITYENV_ROSPORT=$ROSPORT
 export SINGULARITYENV_GAZEBO_MASTER_URI=$GAZEBO_MASTER_URI
 export SINGULARITYENV_GAZEBOPORT=$GAZEBOPORT
 export SINGULARITYENV_TMPDIR=$MYTMP
-singularity exec $SING_GPU  $SING_BINDS $SING_OVERLAYS $SING_BINDS $container_image "<%= session.staged_root.join("desktops", "#{context.desktop}.sh") %>"
+singularity exec $SING_GPU  $SING_BINDS $SING_OVERLAYS $container_image "<%= session.staged_root.join("desktops", "#{context.desktop}.sh") %>"
 echo "Desktop '<%= context.desktop %>' ended..."
