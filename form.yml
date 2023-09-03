@@ -3,7 +3,7 @@ title: Remote Desktop Ros-Gazebo
 cluster: "academic"
 attributes:
   desktop: "myxfce"
-  semester: FALL2021
+  semester: FALL2023
   course: seas/ros-gazebo
   bc_vnc_idle: 0
   node_type: null
@@ -57,7 +57,7 @@ attributes:
     value: 0
     help: |
           **_Checking this box will create a desktop folder unique to this job_**
-  centos_version: es159rosgazebo_melodic-devel-xfce4-2021-09-10-4c0dbc561907.sif
+  centos_version: turbovnc-ros-gazebo_second.sif
   use_intel: False
   use_abaqus: False
   use_matlab: False
