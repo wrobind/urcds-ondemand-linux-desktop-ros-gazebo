@@ -12,8 +12,10 @@ ROS_ENV_SOURCE=/opt/ros/${ROS_DISTRO}/setup.bash
 
 export SHARED_DATA=/n/holyscratch01/Academic-cluster/${SEMESTER}/$(id -g -n)/SHARED
 # Add symlink to a shared data folder containing datasets
-if [ -e "$SHARED_DATA" ] && [ ! -e "$HOME/shared_data" ]; then
-    ln -s $SHARED_DATA $HOME/shared_data
+if [ -e "$SHARED_DATA" ]; then
+    if [ ! -e "$HOME/shared_data" ]; then
+        ln -s $SHARED_DATA $HOME/shared_data
+    fi
 else
     echo "Could not find your class shared_data folder at ${SHARED_DATA} and cannot proceed." 1>&2
     exit 1
