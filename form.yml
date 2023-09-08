@@ -57,7 +57,7 @@ attributes:
     value: 0
     help: |
           **_Checking this box will create a desktop folder unique to this job_**
-  centos_version: urcds-ros-gazebo_first.sif
+  centos_version: urcds-linux-ros-gazebo-de0e0.sif
   use_intel: False
   use_abaqus: False
   use_matlab: False
