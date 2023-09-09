@@ -56,24 +56,14 @@ attributes:
     widget: check_box
     value: 0
     help: |
-          **_Checking this box will create a desktop folder unique to this job_**
-  centos_version: urcds-linux-ros-gazebo-de0e0.sif
-  use_intel: False
-  use_abaqus: False
+
+  image_filename: urcds-linux-ros-gazebo-test.sif
   use_matlab: False
-  use_comsol: False
-  use_lumerical: False
-  use_stata: False
   intel_version: intel/21.2.0-fasrc01
-  abaqus_version: abaqus-2019.sqs
   matlab_version: matlab/R2022b-fasrc01
-  comsol_version: comsol-teaching/5.6-fasrc01
-  lumerical_version: lumerical-teaching/2021R2_R2_7bf43e7149-fasrc01
-  stata_version: stata/17.0-fasrc01
-  vscode_version: vscode/1.49-fasrc01
-  git_version: git/2.17.0-fasrc01
 
 form:
+  - image_filename
   - bc_vnc_idle
   - desktop
   - semester
@@ -85,24 +75,10 @@ form:
   - custom_memory_per_node
   - custom_num_cores
   - custom_num_tasks
-  - custom_num_gpus
   - bc_num_hours
   - custom_time
   - custom_desktop
   - custom_reservation
   - bc_account
-  - centos_version
-  - use_intel
-  - use_abaqus
-  - use_matlab
-  - use_comsol
-  - use_lumerical
-  - use_stata
   - intel_version
-  - abaqus_version
   - matlab_version
-  - comsol_version
-  - lumerical_version
-  - stata_version
-  - vscode_version
-  - git_version

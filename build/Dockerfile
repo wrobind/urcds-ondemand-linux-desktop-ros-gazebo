@@ -6,7 +6,7 @@ ARG ROS_DISTRO=noetic
 
 SHELL ["/bin/bash", "-c"]
 
-# Python3 needs BeautifulSoup 4, rosdep tries for Py2 python-beautifulsoup Debian package
+# Python3 needs BeautifulSoup 4 (python3-bs4), rosdep tries for Py2 python-beautifulsoup Debian package
 RUN apt -y update && \
     apt -y install apt-transport-https curl emacs firefox locales lsb-core python3 python3-bs4 python-bs4-doc python3-pip qt5-default qt5-qmake qtbase5-dev-tools libqt5gui5 libqt5svg5 qt5-gtk-platformtheme qt5-image-formats-plugins vim xfce4 xfce4-terminal zenity  &&\
     rm -rf /var/lib/apt/lists/*
