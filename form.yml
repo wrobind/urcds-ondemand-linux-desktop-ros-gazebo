@@ -18,44 +18,44 @@ attributes:
     widget: text_field
   bc_queue: "academic"
   bc_num_hours: null
-  custom_email_address:
-    label: email for status notification
-    widget: text_field
+#  custom_email_address:
+#    label: email for status notification
+#    widget: text_field
   
-  custom_memory_per_node:
-    label: Memory Allocation in GB
-    value: 16
-    min: 4
-    step: 1
-    max: 250
-    widget: number_field
-  
-  
-  custom_num_cores:
-    label: Number of cores
-    value: 4
-    min: 1
-    step: 1
-    max: 64
-    widget: number_field
-    help: "Number of Cpus per task"
+  custom_memory_per_node: 32
+#    label: Memory Allocation in GB
+#    value: 16
+#    min: 4
+#    step: 1
+#    max: 250
+#    widget: number_field
   
   
-  custom_num_tasks:
-    label: Number of mpi tasks
-    value: 1
-    min: 1
-    step: 1
-    max: 64
-    help: "Number of mpi tasks. If you don't know what this means leave it at 1"
+  custom_num_cores: 4
+#    label: Number of cores
+#    value: 4
+#    min: 1
+#    step: 1
+#    max: 64
+#    widget: number_field
+#    help: "Number of Cpus per task"
+  
+  
+  custom_num_tasks: 1
+#    label: Number of mpi tasks
+#    value: 1
+#    min: 1
+#    step: 1
+#    max: 64
+#    help: "Number of mpi tasks. If you don't know what this means leave it at 1"
   
   custom_num_gpus: 0
   custom_reservation: null
-  custom_desktop:
-    label: "Custom Desktop Folder"
-    widget: check_box
-    value: 0
-    help: |
+  custom_desktop: 0
+#    label: "Custom Desktop Folder"
+#    widget: check_box
+#    value: 0
+#    help: |
 
   image_filename: urcds-linux-ros-gazebo-test.sif
   use_matlab: False
