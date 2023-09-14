@@ -78,6 +78,7 @@ form:
   - bc_num_hours
   - custom_time
   - custom_desktop
+  - custom_num_gpus
   - custom_reservation
   - bc_account
   - intel_version
